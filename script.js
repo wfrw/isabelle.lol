@@ -307,12 +307,9 @@ document.addEventListener('DOMContentLoaded', function() {
             fileContent.style.display = 'block';
             
             // Apply syntax highlighting
-            fileContent.innerHTML = `<code class="language-lua">${content}</code>`;
-            
-            // If using highlight.js (recommended), replace above with:
-            // fileContent.innerHTML = `<pre><code class="language-lua">${content}</code></pre>`;
-            // hljs.highlightElement(fileContent.querySelector('code'));
-            
+            fileContent.innerHTML = `<pre><code class="language-lua">${content}</code></pre>`;
+            hljs.highlightElement(fileContent.querySelector('code'));
+
         } catch (error) {
             fileContent.innerHTML = `Error loading file: ${error.message}`;
         }
