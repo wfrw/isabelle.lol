@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTitle = document.querySelector('.modal-content h2');
     
     // Base GitHub API URL
-    const repoUrl = 'https://api.github.com/repos/wfrw/isabelle.cfg/contents/Scripts';
+    const repoUrl = 'https://api.github.com/repos/wfrw/isabelle.lol/contents/Scripts';
     
     // Handle script button clicks
     btns.forEach(btn => {
